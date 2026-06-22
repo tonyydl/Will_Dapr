@@ -130,6 +130,18 @@ var counter = await daprClient.InvokeMethodAsync<int>(
 
 ---
 
+## 清理環境
+
+完成實驗後，可執行以下指令移除 Dapr 在本機建立的 Docker 容器與設定檔：
+
+```bash
+dapr uninstall
+```
+
+這會移除 Redis、Zipkin 容器以及 `~/.dapr/` 目錄下的預設元件設定。
+
+---
+
 ## 參考資料
 
 - [在本機使用 Dapr 開發微服務應用程式 — Will 保哥](https://blog.miniasp.com/post/2021/10/19/Developing-Microservice-apps-using-Dapr-locally)
