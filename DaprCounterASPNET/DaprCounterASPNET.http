@@ -1,0 +1,6 @@
+@DaprCounterASPNET_HostAddress = http://localhost:5103
+
+GET {{DaprCounterASPNET_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
